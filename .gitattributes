@@ -1,22 +1,20 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Newline format in Windows(CR-LF)
+*.bat text eol=crlf
+*.filters text eol=crlf
+*.ini text eol=crlf
+*.rc text eol=crlf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+Documents/*.txt text eol=crlf
 
-# Custom for Visual Studio
-*.cs     diff=csharp
-*.sln    merge=union
-*.csproj merge=union
-*.vbproj merge=union
-*.fsproj merge=union
-*.dbproj merge=union
-
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# Newline format in FreeBSD/Linux/macOS(LF)
+*.pbxproj text eol=lf
+*.plist text eol=lf
+*.service text eol=lf
+*.xcscheme text eol=lf
+*.xcsettings eol=lf
+*.xcworkspacedata eol=lf
+CMakeLists.txt text eol=lf
+Source/Auxiliary/Scripts/* text eol=lf
+Source/Pcap_DNSProxy/CMakeLists.txt text eol=lf
+Source/Pcap_DNSProxy.xcodeproj/* eol=lf
